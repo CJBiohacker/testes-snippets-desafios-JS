@@ -37,3 +37,5 @@ const TargetArray = (A, B) => {
 }
 
 TargetArray(A, B);
+
+// COMENTÁRIO DOS MACACOS ANCIÕES DO MULTIVERSO ALTERNATIVO DOS PRIMATAS
