@@ -37,5 +37,3 @@ const TargetArray = (A, B) => {
 }
 
 TargetArray(A, B);
-
-// COMENTÁRIO ADICIONADO PRA EXEMPLIFICAR O GIT ADD E GIT COMMIT
