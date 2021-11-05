@@ -16,7 +16,7 @@ const RandomNumberB = (b) => {
 let A = RandomNumberA(array);
 let B = RandomNumberB(array);
 let sum = A + B;
-const condTrue = A !== B && sum === targetSum;
+const condTrue = (A !== B && sum === targetSum);
 const condFalse = (A === B && sum !== targetSum || A === B && sum === targetSum || A !== B && sum !== targetSum);
 console.log(`A:${A} B:${B} Soma:${sum}`);
 
