@@ -12,3 +12,10 @@ console.log(testeVazio);
 
 console.log(testeAlfaNum);
 (testeAlfaNum === true) ? console.log(`String com caracteres.`) : console.log(`String vazia.`);
+
+// SEPARANDO APENAS NÚMEROS COM PONTUAÇÃO (Nº de Versão)
+const string2 = `\"FRONTEND_VERSION\": \"1.0.63\",`;
+const regExp = /\d[^]/g;
+const match = string2.match(regExp);
+
+console.log(match);
