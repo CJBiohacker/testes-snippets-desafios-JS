@@ -121,7 +121,3 @@ const stringifiednumberRandom = numberArray.join("").toString();
 
 console.log(stringifiedStringArray);
 console.log(stringifiednumberRandom);
-
-
-
-
