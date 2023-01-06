@@ -42,12 +42,12 @@ console.log("entriesIteration ==> ", entriesIteration);
 //     telefone_2_orig: "962754696",
 //     email: 'abcd@gmail.com',
 // };
-const changeIconStatus = (nome) => {
-  columnValueArray = [];
-  let id;
-  if (nome === 'telefone_1') id = 0;
-  if (nome === 'telefone_2') id = 1;
-  if (nome === 'email') id = 2;
+// const changeIconStatus = (nome) => {
+//   columnValueArray = [];
+//   let id;
+//   if (nome === 'telefone_1') id = 0;
+//   if (nome === 'telefone_2') id = 1;
+//   if (nome === 'email') id = 2;
 
   resetedCurrentCompany = resetedCurrentCompany.map((el) => {    
     console.log("changeIconStatus ~ element ==> ", el);
