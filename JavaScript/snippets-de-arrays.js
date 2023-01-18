@@ -121,3 +121,24 @@ const stringifiednumberRandom = numberArray.join("").toString();
 
 console.log(stringifiedStringArray);
 console.log(stringifiednumberRandom);
+
+const formatPhone = (value) => {
+  return value.replace(/(\d)(\d{4})$/, "$1-$2");
+};
+
+console.log("format Phone ==> ", formatPhone("21967290452"));
+
+
+// ******************************
+
+let occultedNumber = '21****458156';
+const condition = (occultedNumber) => occultedNumber && occultedNumber.includes('*') ? 'CONDIÇÃO 1' : occultedNumber && !occultedNumber.includes('*') ? 'CONDIÇÃO 2' : 'CONDIÇÃO FINAL';
+
+console.log(condition(occultedNumber));
+
+occultedNumber = '2154687';
+console.log(condition(occultedNumber));
+
+occultedNumber = '';
+console.log(condition(occultedNumber));
+

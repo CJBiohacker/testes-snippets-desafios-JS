@@ -9,11 +9,11 @@ const orOperatorTest = (arr) => {
 }
 
 const optChaintest = (arr) => {
-    console.log(arr?.[42]);
+    console.log("OPTIONAL CHAINING TEST ==> ", arr?.[42]);
 }
 
 const designatedError = (arr) => {
-    console.log(arr[42]);
+    console.log("ERROR TEST ==> ", arr[42]);
 }
 
 
@@ -42,3 +42,9 @@ const mapChangeDetailsAvailableStates = [
         value: "shapes-sector"
     }
 ];
+
+console.log([] == false);
+console.log([] === false);
+console.log([] === undefined);
+console.log([] === null);
+
