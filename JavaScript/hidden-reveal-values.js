@@ -48,3 +48,42 @@ const getHiddenValue = (rawValue, keyname) => {
   console.log(getHiddenValue("GORILLASAPPER@gmail.com", 'email'));
   
 
+/* -------- HIDDEN/REAVEAL VUEX OBJECT BASE STRUCTURE --------*/
+  const contactData = [
+    {
+      keyName: "telefone_1",
+      rawValue: `(${this.currentCompany.ddd_1}) ${FormatHelper.formatPhone(
+        this.currentCompany.telefone_1
+      )}`,
+      hiddenvalue: this.getHiddenValue(
+        this.currentCompany.telefone_1,
+        "telefone_1"
+      ),
+      showIcon: "$remove_red_eye_rounded",
+      hideIcon: "$eye_cancel",
+      shouldHideValue: true,
+    },
+    {
+      keyName: "telefone_2",
+      rawValue: `(${this.currentCompany.ddd_2}) ${FormatHelper.formatPhone(
+        this.currentCompany.telefone_2
+      )}`,
+      hiddenvalue: this.getHiddenValue(
+        this.currentCompany.telefone_2,
+        "telefone_2"
+      ),
+      showIcon: "$remove_red_eye_rounded",
+      hideIcon: "$eye_cancel",
+      shouldHideValue: true,
+    },
+    {
+      keyName: "email",
+      rawValue: this.currentCompany.email,
+      hiddenvalue: this.getHiddenValue(this.currentCompany.email, "email"),
+      showIcon: "$remove_red_eye_rounded",
+      hideIcon: "$eye_cancel",
+      shouldHideValue: true,
+    },
+  ];
+/* -------------------------------------------------------------- */
+
