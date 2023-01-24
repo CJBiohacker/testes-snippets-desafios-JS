@@ -122,14 +122,17 @@ const stringifiednumberRandom = numberArray.join("").toString();
 console.log(stringifiedStringArray);
 console.log(stringifiednumberRandom);
 
+const ddd_1 = '21';
+const ddd_2 = '11';
+
 const formatPhone = (value) => {
   return value.replace(/(\d)(\d{4})$/, "$1-$2");
 };
 
-console.log("format Phone ==> ", formatPhone("21967290452"));
+console.log("format Phone ==> ", formatPhone(`(${ddd_1}) 967290452`));
 
 
-// ******************************
+/* ---------------------------------------------------------------- */
 
 let occultedNumber = '21****458156';
 const condition = (occultedNumber) => occultedNumber && occultedNumber.includes('*') ? 'CONDIÇÃO 1' : occultedNumber && !occultedNumber.includes('*') ? 'CONDIÇÃO 2' : 'CONDIÇÃO FINAL';
@@ -141,4 +144,19 @@ console.log(condition(occultedNumber));
 
 occultedNumber = '';
 console.log(condition(occultedNumber));
+
+/* ---------------------------------------------------------------- */
+
+let x = [1, 2, 3];
+let y = [...x];
+let z = x;
+x.push(4);
+console.log(y);
+console.log(z);
+
+/* ---------------------------------------------------------------- */
+let arraytoString = 'HelloMyFriend';
+arraytoString = arraytoString.replace('oMyFriend', "*".repeat(3));
+arraytoString = arraytoString.slice(0,7);
+console.log("arraytoString ==> ", arraytoString);
 
