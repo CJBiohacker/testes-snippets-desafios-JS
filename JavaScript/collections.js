@@ -62,3 +62,8 @@ const numeros = [30, 30, 40, 5, 223, 2049, 3034, 5];
 
 const set = new Set(numeros);
 
+const uniqueNumbers = (set) => {
+    return [...set];
+}
+console.log("🚀 ~ file: collections.js:66 ~ uniqueNumbers ~ uniqueNumbers", uniqueNumbers(set))
+
