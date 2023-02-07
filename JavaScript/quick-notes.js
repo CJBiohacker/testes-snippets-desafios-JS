@@ -24,3 +24,11 @@ console.log("🚀 ~ file: quick-notes.js:21 ~ users ==> ", users)
 users[0].date = moment(String(users[0].date)).utc().format("YYYY-MM-DD HH:mm Z");
 console.log("🚀 ~ file: quick-notes.js:21 ~ users ==> ", users)
 
+const randomObject = {
+  department: "Financeiro",
+  id: '111030201-a5s4c81-b5c7d8'
+};
+
+const values = Object.values(randomObject);
+const array = [...values];
+console.log("🚀 ~ file: quick-notes.js:34 ~ array ==> ", array);
