@@ -67,3 +67,9 @@ const uniqueNumbers = (set) => {
 }
 console.log("🚀 ~ file: collections.js:66 ~ uniqueNumbers ~ uniqueNumbers", uniqueNumbers(set))
 
+
+const arr = [1, 2, 3];
+const map = new Map();
+map.set(arr, 'array');
+console.log(map.get([1, 2, 3]));
+
