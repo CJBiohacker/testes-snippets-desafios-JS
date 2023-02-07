@@ -15,6 +15,7 @@
     "decompress-response": "^6.0.0",
     "defer-to-connect": "^2.0.1",
     "end-of-stream": "^1.4.4",
+    "exceljs": "^4.3.0",
     "get-stream": "^5.2.0",
     "got": "^11.8.5",
     "http-cache-semantics": "^4.1.0",
