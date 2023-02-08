@@ -56,4 +56,22 @@ async function createAndWriteWorkbook() {
   await workbook.xlsx.writeFile("planilha.xlsx");
 }
 
-createAndWriteWorkbook();
+// createAndWriteWorkbook();
+
+const atrbiuteValidation = (conditional) => {
+  const object = {
+    atr1: "Atributo1",
+    atr2: "Atributo2",
+    atr3: "Atributo3",
+  };
+
+  if (conditional) {
+    object.atr4 = "Atributo4";
+  } 
+
+  return object;
+}
+
+console.log(atrbiuteValidation(true));
+
+console.log(atrbiuteValidation(false));
