@@ -73,3 +73,8 @@ const map = new Map();
 map.set(arr, 'array');
 console.log(map.get([1, 2, 3]));
 
+const arrayTransf = [...arr, ...numbers]
+const arrayTransf2 = [ arr, numbers]
+
+console.log(arrayTransf)
+console.log(arrayTransf2)
