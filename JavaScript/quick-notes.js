@@ -70,31 +70,34 @@ const [validCnpjCollection, invalidCnpjCollection] = textIgnoreValidation(arrayI
 console.log("validCnpjCollection ==> ", validCnpjCollection);
 console.log("invalidCnpjCollection ==> ", invalidCnpjCollection);
 
-
 const email = "example@example.com";
 const wrongEmail = "exam ple@example.com";
+const wrongEmail2 = "example @example.com";
+const wrongEmail3 = "example_@example.com";
 const noSignEmail = "example_example.com";
 const whiteSpaceAndSignEmailValidation = /^\S+@\S+$/;
-const completeEmailValidation = /^[a-z0-9]+(?:[._-][a-z0-9]+)*@(?:(?=[a-z0-9-]{1,63}\.)[a-z0-9]+(?:-[a-z0-9]+)*\.){1,}[a-z]{2,}$/i; 
+const completeEmailValidation = /^[a-z0-9]+(?:[._-][a-z0-9]+)*@(?:(?=[a-z0-9-]{1,63}\.)[a-z0-9]+(?:-[a-z0-9]+)*\.){1,}[a-z]{2,}$/i;
 // Email valid/invalid formats reference: https://help.xmatters.com/ondemand/trial/valid_email_format.htm
 
 const validateEmail = (email, validationType) => {
   if ([1, "1"].includes(validationType)) {
     console.log("validationType 1")
-    return whiteSpaceAndSignEmailValidation.test(email) ? "Valid email" : "Invalid email";  
+    return whiteSpaceAndSignEmailValidation.test(email) ? "Valid email" : "Invalid email";
   }
 
   if ([2, "2"].includes(validationType)) {
     console.log("validationType 2")
-    return completeEmailValidation.test(email) ? "Valid email" : "Invalid email";  
+    return completeEmailValidation.test(email) ? "Valid email" : "Invalid email";
   }
 
   return "Invalid Type !!!"
 };
 
-console.log(`validateEmail Type 1 - ${email} ==> `, validateEmail(email, 1));
-console.log(`validateEmail Type 1 - ${wrongEmail} ==> `, validateEmail(wrongEmail, 1));
-console.log(`validateEmail Type 1 - ${noSignEmail} ==> `, validateEmail(noSignEmail, 1));
+console.log(`validateEmail Type 2 - ${email} ==> `, validateEmail(email, 2));
+console.log(`validateEmail Type 2 - ${wrongEmail} ==> `, validateEmail(wrongEmail, 2));
+console.log(`validateEmail Type 2 - ${wrongEmail2} ==> `, validateEmail(wrongEmail2, 2));
+console.log(`validateEmail Type 2 - ${wrongEmail3} ==> `, validateEmail(wrongEmail3, 2));
+console.log(`validateEmail Type 2 - ${noSignEmail} ==> `, validateEmail(noSignEmail, 2));
 
 const wrongPrefixEmail = "abc-@mail.com";
 const wrongPrefixEmail2 = "abc..def@mail.com";
