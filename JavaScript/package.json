@@ -2,8 +2,8 @@
   "name": "javascript",
   "version": "1.0.0",
   "description": "Collection of javascript experiments and snippets to solve programming routine and maintenance problems.",
-  "type": "module",
   "main": "check-focused-element.js",
+  "type": "module",
   "dependencies": {
     "array-find-index": "^1.0.2",
     "cacheable-lookup": "^5.0.4",
