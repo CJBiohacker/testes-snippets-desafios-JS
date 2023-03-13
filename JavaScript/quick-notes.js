@@ -81,12 +81,10 @@ const completeEmailValidation = /^[a-z0-9]+(?:[._-][a-z0-9]+)*@(?:(?=[a-z0-9-]{1
 
 const validateEmail = (email, validationType) => {
   if ([1, "1"].includes(validationType)) {
-    console.log("validationType 1")
     return whiteSpaceAndSignEmailValidation.test(email) ? "Valid email" : "Invalid email";
   }
 
   if ([2, "2"].includes(validationType)) {
-    console.log("validationType 2")
     return completeEmailValidation.test(email) ? "Valid email" : "Invalid email";
   }
 
@@ -143,3 +141,10 @@ console.log(`validateEmail Type 2 - ${correctDomainEmail2} ==> `, validateEmail(
 console.log(`validateEmail Type 2 - ${correctDomainEmail3} ==> `, validateEmail(correctDomainEmail3, 2));
 console.log(`validateEmail Type 2 - ${correctDomainEmail4} ==> `, validateEmail(correctDomainEmail4, 2));
 
+const tempToken = {
+  tempToken:
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzg3MzM1MDIsImV4cCI6MTY3ODk5MjcwMn0.aUtAPqlovlhUI5WyL8NRevw0GN-rjla0scG97ZBbNLE",
+};
+
+console.log("\n Token ==> ", tempToken.tempToken)
+console.log("\n Token ==> ", Object.values(tempToken)[0]);
