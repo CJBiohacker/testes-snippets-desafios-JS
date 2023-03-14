@@ -160,3 +160,31 @@ arraytoString = arraytoString.replace('oMyFriend', "*".repeat(3));
 arraytoString = arraytoString.slice(0,7);
 console.log("arraytoString ==> ", arraytoString);
 
+/* ---------------------------------------------------------------- */
+
+const numList = [ 1, 2, 3, 4];
+const numHistory = [ 3, 2, 1];
+const result = [];
+let isBreakTrue;
+let password;
+
+for (let i = 0; i < numList.length; i += 1) {  
+  for (let j = 0; j < numHistory.length; j += 1) {
+    console.log(`Ciclo i = ${i}, valor A = ${numList[i]}`);
+    console.log(`Ciclo j = ${j}, valor A = ${numHistory[j]}`);
+    password = numList[i];
+    if (password === numHistory[j]) {
+      console.log(`valor encontrado`);
+      result.push(password);
+    } else {
+      console.log(`valor diferente, quebrou`);
+      isBreakTrue = true
+      break
+    }
+  }
+  if (isBreakTrue) {
+    break;
+  }
+}
+
+console.log("result ==> ", result);
