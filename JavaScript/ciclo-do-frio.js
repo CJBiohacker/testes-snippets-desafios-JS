@@ -1,7 +1,7 @@
 let climaDeHoje = 'calor';
 let cicloDoFrio = ["Comer", "Dormir", "Preguiça"];
 let viver = ["Fazer qualquer coisa além de: ", ...cicloDoFrio.join(", ")];
-
+const sliceAndMap = cicloDoFrio.slice(0,-1).map(x => x);
 
 const condition = (clima) => {
 
@@ -13,3 +13,4 @@ const condition = (clima) => {
 };
 
 condition(climaDeHoje);
+console.log(sliceAndMap);
