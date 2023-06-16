@@ -48,3 +48,16 @@ console.log([] === false);
 console.log([] === undefined);
 console.log([] === null);
 
+
+// Empty array boolean validation. 
+let bodyTags = [];
+
+let tags = !bodyTags[0] ? null : tags;
+
+console.log(tags)
+
+bodyTags.push("#MACACO");
+
+let newTags = !bodyTags[0] ? null : bodyTags;
+
+console.log(newTags);
