@@ -87,3 +87,19 @@ fiboEvenSum(60);
 fiboEvenSum(1000);
 fiboEvenSum(100000);
 fiboEvenSum(4000000);
+
+// ROUNDING NUMBERS WITH 2 DECIMALS AND FORMATTING VALUES WITH SELECTED LANGUAGE
+const num = 12345.6;
+const decimalPlaces = 2;
+const limits = {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+};
+
+const englishFormat = Number(num.toFixed(2)).toLocaleString('en-US', limits);
+console.log(englishFormat);
+console.log(typeof englishFormat);
+
+const brazilianFormat = Number(num.toFixed(2)).toLocaleString('pt-BR', limits);
+console.log(brazilianFormat);
+console.log(typeof brazilianFormat);
