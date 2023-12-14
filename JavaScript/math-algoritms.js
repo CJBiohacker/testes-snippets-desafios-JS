@@ -103,3 +103,18 @@ console.log(typeof englishFormat);
 const brazilianFormat = Number(num.toFixed(2)).toLocaleString('pt-BR', limits);
 console.log(brazilianFormat);
 console.log(typeof brazilianFormat);
+
+
+const string = "123";
+
+const toBase64 = (value) => {
+  return Buffer.from(value).toString('base64');
+};
+
+const convertedString = toBase64(string);
+const convertedString2 = toBase64(convertedString);
+const convertedString3 = toBase64(convertedString2);
+
+console.log("STRING EM BASE 64 => ", convertedString);
+console.log("STRING EM BASE 64 - 2 => ", convertedString2);
+console.log("STRING EM BASE 64 - 3 => ", convertedString3);
