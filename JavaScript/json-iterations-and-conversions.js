@@ -119,3 +119,42 @@ const roundedNumbersArray = items.map((objeto) => {
 });
 
 // ----------------------------------------------------------------------------------
+
+const getTrueKeys = (obj) => {
+  const allowedKeys = ['xl', 'lg', 'md', 'sm', 'xs'];
+  return Object.keys(obj)
+    .filter(key => allowedKeys.includes(key) && obj[key].value);
+};
+
+let numCols;
+const width = 870;
+
+const responsiveColValues = {
+xl: 3,
+lg: 4,
+md: 6,
+sm: 10,
+xs: 12,
+};
+
+const obj = {
+xl: {value: false},
+lg: {value: false},
+md: {value: true},
+sm: {value: false},
+xs: {value: false},
+};
+
+const trueKeys = getTrueKeys(obj);
+console.log("🚀 ~ trueKeys:", trueKeys);
+
+numCols = trueKeys.map((key) => responsiveColValues[key]).join("");
+
+if (trueKeys.join("") === "md") {
+numCols = width >= 960 && width < 1280 ? 6 : 4;
+}
+
+console.log(numCols);
+
+// ----------------------------------------------------------------------------------
+
